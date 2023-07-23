@@ -1,0 +1,75 @@
+.myInfo_main {
+  width: 1200px;
+  background-color: white;
+  margin: 0 auto;
+}
+.myInfo_main_top {
+  display: flex;
+  margin: 0 auto;
+}
+.myInfo_profile_left {
+  width: 40%;
+  text-align: center;
+  div {
+    padding-bottom: 5%;
+    margin: 0 auto;
+  }
+  p{
+   padding-bottom: 5%; 
+  }
+}
+.myInfo_profile_right {
+  width: 60%;
+  padding-left: 10%;
+}
+.myInfo_profile_right_border{
+  border:1px solid rgba(197, 197, 197, 0.5);
+}
+.myInfo_profile_right_top{
+  padding-bottom: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10%;
+ 
+}
+.myInfo_profile_right_bottom{
+  padding-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+tr { display: block; float: left; }
+th, td { display: block; }
+
+.myInfo_orderList{
+  padding-top:7%;
+  display: inline-block;
+  width: 100%;
+  >.myInfo_orderList_box{
+    height: 100px;
+    border:1px solid #337fbd;
+    background-color: #ECECEC;
+    display: flex;
+    flex-wrap: wrap;
+    gap:21%;
+    align-items: center;
+    span{
+      text-align: center;
+      font-weight: 600;
+    }
+    span:nth-child(1){
+      padding-left: 8%;
+    }
+  }
+}
+
+.myInfo_recentview{
+  padding-top:7%
+}
+.myInfo_recent_view_list {
+  display: flex;
+  gap: 20px;
+  height: 100%;
+  flex-wrap: wrap;
+  gap:5%;
+}

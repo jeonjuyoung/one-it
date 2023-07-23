@@ -1,0 +1,216 @@
+/* media css  반응형 css */
+
+/* pc */
+@media (max-width:1400px) and (min-width:1200px) {
+  /* women , man */
+  .list__container {
+    .card_box {
+      width: calc(25% - 10px);
+    }
+  }
+}
+
+@media screen and (max-width:1200px) {
+  /* header */
+  .header_part .header__container>div:first-child {
+    width: auto;
+  }
+  /* women , man */
+  .list__container {
+    .card_box {
+      width: calc(33.33333333% - 10px);
+    }
+  }
+
+}
+
+@media (max-width:1199px) and (min-width:960px) {}
+
+@media (max-width:960px) and (min-width:768px) {
+
+  /* main */
+  .event_product__container {
+    flex-direction: column;
+    padding: 0 !important;
+
+    .sec3__left {
+      width: 100% !important;
+    }
+
+    .left__section {
+      width: 100% !important;
+    }
+  }
+
+  .event_info__container {
+    padding: 0 !important;
+  }
+}
+
+/* Tab */
+@media screen and (max-width:800px) {
+
+  /* header */
+  .header_part .header__container .top_category_menu {
+    gap: 5px;
+
+    a {
+      font-size: 18px;
+    }
+  }
+
+  /* main */
+  .banner__container {
+    .image__view {
+      flex-direction: column-reverse !important;
+      justify-content: center !important;
+      text-align: center;
+
+      div:nth-child(2) {
+        width: 100%;
+        height: 400px;
+        max-width: 400px;
+        margin-bottom: 10px;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .event_product__container {
+    flex-direction: column;
+
+    .sec3__left {
+      width: 100% !important;
+    }
+
+    .left__section {
+      width: 100% !important;
+    }
+  }
+  /* women , man */
+  .accordions {display:none;}
+  .product_list_wrap {width:100%;}
+  
+}
+
+@media screen and (max-width:700px) {
+
+  /* header */
+  .header_part .header__container .top_category_menu {
+    display: none !important;
+  }
+
+  /* main */
+  .real_time_best__container {
+    .list {
+      flex-direction: column;
+      width: 300% !important;
+      margin-left: 3%;
+
+      .card_box {
+        width: 16% !important;
+      }
+    }
+  }
+
+  .left__section {
+    flex-direction: column;
+
+    .box__section {
+      width: 100% !important;
+
+      img {
+        height: 200px !important;
+      }
+    }
+  }
+
+  .event_info__container {
+    width: 100%;
+    flex-direction: column;
+
+    img {
+      width: 100% !important;
+    }
+  }
+
+  /* 모바일 하단 nav */
+  .mob__menu_box {
+    display: block;
+  }
+
+}
+
+/* Mob */
+@media screen and (max-width:389px) {
+
+  /* header */
+  .header__container {
+    padding: 10px 15px !important;
+
+    .right_menu {
+      gap: 10px !important;
+    }
+  }
+
+  /* main */
+  .price {
+    flex-direction: column !important;
+  }
+
+  .time_deal__container {
+    .text {
+      flex-direction: column;
+      padding: 30px 0 0 0 !important;
+    }
+
+    .bottom__section {
+      flex-direction: column;
+    }
+
+    .bottom__section>div {
+      width: 100% !important;
+    }
+  }
+
+  .banner__container {
+    padding-bottom: 30px;
+    button{
+      &#prev {
+        left:0px !important;
+      }
+      &#next {
+        right:0px !important;
+      }
+    }
+  }
+  
+  .wrap {
+    margin-top:50px;
+  }
+
+  /* header mob menu 검색 */
+  .mob_seachbox {
+    top:60px !important;
+    display:none;
+  }
+
+  .header__container{
+    .css-flobe3 {
+      display: none;
+    }
+  }
+  .product_info {
+    padding: 10px 10px 0 10px;
+  }
+
+  /* women , man */
+  .list__container {
+    .card_box {
+      width: calc(50% - 10px);
+    }
+  }
+}

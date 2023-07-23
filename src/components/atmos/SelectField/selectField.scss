@@ -1,0 +1,64 @@
+$select-background: #fff;
+$select-border-color: #ccc;
+$select-hover-border-color: #999;
+$select-focus-border-color: #0077ff;
+$select-focus-box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.2);
+
+.select-box {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  color: #555;
+  width: 200px;
+  height: 36px;
+  line-height: 36px;
+  background-color: $select-background;
+  border: 1px solid $select-border-color;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    border-color: $select-hover-border-color;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $select-focus-border-color;
+    box-shadow: $select-focus-box-shadow;
+  }
+
+  > .arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 6px 0 6px;
+    border-color: #555 transparent transparent transparent;
+    pointer-events: none;
+  }
+
+  > select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+
+    option {
+      font-size: 16px;
+      color: #555;
+      background-color: $select-background;
+    }
+
+    option:checked {
+      background-color: #0077ff;
+      color: #fff;
+    }
+  }
+}

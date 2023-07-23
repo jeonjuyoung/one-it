@@ -1,0 +1,153 @@
+@font-face {
+  font-family: "Nanum Gothic";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/static_fonts/NanumGothic-Regular.eot),
+    url(/static_fonts/NanumGothic-Regular.woff2) format("woff2"),
+    url(/static_fonts/NanumGothic-Regular.woff) format("woff"),
+    url(/static_fonts/NanumGothic-Regular.ttf) format("truetype");
+}
+
+.container {
+  width: 1200px; 
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px 0px #0000001a;
+}
+
+// 주문 결제
+.order__section {
+    display: flex;
+    gap: 49px;
+}
+.payment__container {
+    width: 572px;
+    border: 1px solid #dadada;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 5px;
+    padding: 34px 26px;
+    margin-bottom: 47px;
+}
+.order__info__section {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    padding-bottom: 46px;
+}
+.product__container {
+    width: 500px;
+} 
+.order__info__secton {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+}
+.order__title {
+    font-size: 18px;
+    font-weight: 800; 
+}
+.product__list {
+    display: flex;
+    gap: 19px;  
+}
+.product__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    .title, .price {
+        font-size: 16px;
+        font-weight: 800;
+    }
+    .desc, .amout {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+.order__info {
+    display: flex;
+    justify-content: space-between;  
+    .discount {
+        font-size: 16px;
+        font-weight: 400;
+        color: #eb0046;
+    }
+}
+.order__info__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.total {
+    font-size: 16px;
+    font-weight: 700;
+}
+.product__underline { 
+    border-bottom: 1px solid #ddd;
+    margin: 14px 0;
+}
+.MuiButtonBase-root-MuiRadio-root.Mui-checked {
+    color: #4376E3 !important;
+} 
+.font_14 {
+    font-size: 14px;
+}
+.font_16 {
+    font-size: 16px;
+}
+.location {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 18px;
+    button {
+        height: 30px;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+.info__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.info__section {
+    display: flex; 
+    align-items: center;
+}
+.label__section {
+    width: 119px;
+}
+.input__section {
+    display: flex;
+    gap: 10px;  
+    align-items: center;
+    button {
+        height: 25px;
+        width: fit-content;
+        background: #fff;
+        color: #4376E3;
+        font-size: 14px;
+        font-weight: 700;
+        box-shadow: none;        
+        border: 1px solid #0940B4;
+        border-radius: 3px;
+
+    }
+    input {
+        background: #fff;
+        border: 1px solid #d1d1d1;
+        border-radius: 5px;
+        height: 34px;
+        font-size: 14px;
+        padding: 17px;
+    } 
+}
+.button__section {
+    display: flex;
+    justify-content: center;
+    button {
+        width: 350px;
+        height: 50px;
+    }
+}

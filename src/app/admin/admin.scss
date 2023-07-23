@@ -1,0 +1,51 @@
+.admin_main{
+  display: flex;
+}
+.admin_main_left{
+  flex: 0 1 10%; 
+  li{
+    line-height: 50px;
+  }
+}
+
+.admin_main_right{
+  flex: 1 1 auto; 
+}
+.admin_right_button{
+  display: flex;
+  gap: 1%;
+  justify-content: right;
+  padding-bottom: 1%;
+}
+.admin_main_left_icon{
+  vertical-align: text-top;
+}
+
+
+
+.wrapper {
+  background-color: whitesmoke;
+  list-style-type: none;
+  padding: 0;
+  border-radius: 3px;
+}
+.form-row {
+  display: flex;
+  justify-content: flex-end;
+  padding: .5em;
+}
+.form-row > label {
+  padding: .5em 1em .5em 0;
+}
+.form-row > input {
+  flex: 1;
+}
+.form-row > input,
+.form-row > button {
+  padding: .5em;
+}
+.form-row > button {
+ background: gray;
+ color: white;
+ border: 0;
+}
